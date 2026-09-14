@@ -1,11 +1,38 @@
-scripts/keys.py
-scripts/*json
-scripts/node_modules/
-scripts/__pycache__/keys.cpython-310.pyc
-package-lock.json
-*.pyc
-scripts/auto_gpt_workspace/*
-*.mpeg
+# Dependencies
+node_modules/
+.npm/
+.pnpm-store/
+
+# Next.js / build
+apps/web/.next/
+apps/web/out/
+**/dist/
+**/*.tsbuildinfo
+.next/
+
+# Env / secrets
 .env
+.env.*
+!.env.template
+!.env.example
+scripts/keys.py
 last_run_ai_settings.yaml
+
+# Python legacy
+**/__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+*.swp
+.idea/
+.vscode/
+
+# Runtime artifacts
 outputs/*
+!outputs/.gitkeep
+*.mpeg
+legacy/auto-gpt/auto_gpt_workspace/*
+legacy/auto-gpt/outputs/*

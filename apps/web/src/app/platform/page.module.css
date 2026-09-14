@@ -1,0 +1,95 @@
+.page {
+  padding-top: var(--space-xl);
+}
+
+.intro {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 1.25rem var(--space-lg);
+  animation: rise var(--duration) var(--ease-out) both;
+}
+
+.brand {
+  margin: 0 0 0.5rem;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  letter-spacing: -0.03em;
+}
+
+.intro h1 {
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  margin-bottom: 0.75rem;
+}
+
+.lead {
+  max-width: var(--measure);
+  color: var(--ink-muted);
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.stack {
+  padding: var(--space-xl) 1.25rem;
+}
+
+.stackInner {
+  max-width: var(--max);
+  margin: 0 auto;
+}
+
+.stackInner h2 {
+  font-size: clamp(1.6rem, 3vw, 2.1rem);
+}
+
+.stackLead {
+  max-width: var(--measure);
+  color: var(--ink-muted);
+  margin-bottom: 1.5rem;
+}
+
+.layers {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--line-strong);
+}
+
+.layers li {
+  display: grid;
+  gap: 0.35rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--line);
+  margin: 0;
+}
+
+.layerName {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: -0.02em;
+}
+
+.layerDetail {
+  color: var(--ink-muted);
+  max-width: 42rem;
+}
+
+@media (min-width: 720px) {
+  .layers li {
+    grid-template-columns: 11rem 1fr;
+    gap: 1.5rem;
+    align-items: baseline;
+  }
+}
+
+.cta {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: var(--space-lg) 1.25rem var(--space-2xl);
+}
+
+.cta h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
