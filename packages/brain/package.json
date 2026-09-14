@@ -1,0 +1,26 @@
+{
+  "name": "@mindpress/brain",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "MindPress company brain — trustworthy map of systems, entities, metrics, policies, and decisions.",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "import": "./src/index.ts",
+      "default": "./src/index.ts"
+    }
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-transform-types --test src/**/*.test.ts"
+  },
+  "dependencies": {
+    "@mindpress/shared": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  }
+}

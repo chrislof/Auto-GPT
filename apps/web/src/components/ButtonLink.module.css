@@ -1,0 +1,36 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  padding: 0.65rem 1.2rem;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  transition: background 160ms ease, color 160ms ease, border-color 160ms ease;
+}
+
+.primary {
+  background: var(--signal);
+  color: #f4faf7;
+  border-color: var(--signal-ink);
+}
+
+.primary:hover {
+  background: var(--signal-ink);
+  color: #f4faf7;
+}
+
+.ghost {
+  background: transparent;
+  color: var(--ink);
+  border-color: var(--line-strong);
+}
+
+.ghost:hover {
+  border-color: var(--ink);
+  color: var(--ink);
+}

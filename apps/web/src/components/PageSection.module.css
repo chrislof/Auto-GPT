@@ -1,0 +1,53 @@
+.section {
+  position: relative;
+  padding: var(--space-2xl) 1.25rem;
+}
+
+.ink {
+  background: linear-gradient(180deg, rgba(13, 21, 32, 0.04), transparent 70%);
+}
+
+.rule {
+  max-width: var(--max);
+  margin: 0 auto 1.5rem;
+  height: 2px;
+  background: var(--signal);
+  transform-origin: left center;
+  animation: draw-line var(--duration) var(--ease-out) both;
+}
+
+.inner {
+  max-width: var(--max);
+  margin: 0 auto;
+}
+
+.eyebrow {
+  margin: 0 0 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--steel);
+}
+
+.title {
+  max-width: 20ch;
+  font-size: clamp(1.75rem, 3.2vw, 2.45rem);
+  margin-bottom: 0.75rem;
+}
+
+.lead {
+  max-width: var(--measure);
+  color: var(--ink-muted);
+  font-size: 1.08rem;
+  margin-bottom: 1.25rem;
+}
+
+.body {
+  max-width: 46rem;
+  color: var(--ink);
+}
+
+.body ul {
+  color: var(--ink-muted);
+}
