@@ -1,9 +1,11 @@
 .header {
   position: sticky;
   top: 0;
-  z-index: 40;
+  z-index: 100;
+  isolation: isolate;
+  pointer-events: auto;
   backdrop-filter: blur(10px);
-  background: rgba(233, 238, 242, 0.82);
+  background: rgba(233, 238, 242, 0.92);
   border-bottom: 1px solid var(--line);
 }
 
